@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_lista_produtos_ordens"
+        android:icon="@drawable/baseline_filter_list_24"
+        android:title="Abrir lista"
+        app:showAsAction="ifRoom" >
+        <menu>
+            <item
+                android:id="@+id/menu_lista_produtos_ordens_nome_decrecente"
+                android:title="Nome Decrecente"
+                app:showAsAction="withText" />
+
+            <item
+                android:id="@+id/menu_lista_produtos_ordens_nome_acrescente"
+                android:title="Nome Acrescente"
+                app:showAsAction="withText" />
+
+            <item
+                android:id="@+id/menu_lista_produtos_ordens_descricao_decrecente"
+                android:title="Descrição Decrecente"
+                app:showAsAction="withText" />
+
+            <item
+                android:id="@+id/menu_lista_produtos_ordens_descricao_acrescente"
+                android:title="Descrição Acrescente"
+                app:showAsAction="withText" />
+
+            <item
+                android:id="@+id/menu_lista_produtos_ordens_valor_decrecente"
+                android:title="Valor Decrecente"
+                app:showAsAction="withText" />
+
+            <item
+                android:id="@+id/menu_lista_produtos_ordens_valor_acrescente"
+                android:title="Valor Acrescente"
+                app:showAsAction="withText" />
+
+            <item
+                android:id="@+id/menu_lista_produtos_ordens_sem_ordenacao"
+                android:title="Sem Ordenação"
+                app:showAsAction="withText" />
+
+        </menu>
+    </item>
+
+</menu>

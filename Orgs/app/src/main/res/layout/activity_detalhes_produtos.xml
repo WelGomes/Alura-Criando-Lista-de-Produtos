@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/activity_detalhes_produtos_imageView"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            app:srcCompat="@drawable/img"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="25dp"
+            android:elevation="10dp"
+            android:layout_margin="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/activity_detalhes_produtos_imageView"
+            app:layout_constraintBottom_toBottomOf="@+id/activity_detalhes_produtos_imageView">
+
+            <TextView
+                android:id="@+id/activity_detalhes_produtos_valor"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="R$:19.99"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="8dp"
+                android:textSize="24sp"
+                android:paddingBottom="8dp"
+                android:textColor="#57A026"
+                android:textStyle="bold"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/activity_detalhes_produtos_titulo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_marginTop="12dp"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/card"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="@tools:sample/lorem/random"/>
+
+        <TextView
+            android:id="@+id/activity_detalhes_prdutos_descricao"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_margin="16dp"
+            tools:text="@tools:sample/lorem/random"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/activity_detalhes_produtos_titulo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
